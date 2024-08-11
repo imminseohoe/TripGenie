@@ -1,0 +1,40 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ai-tour-0926",
+          "appId": "1:514161904272:android:473e3966d3567664186615",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ai-tour-0926",
+          "configurations": {
+            "android": "1:514161904272:android:473e3966d3567664186615",
+            "ios": "1:514161904272:ios:ddb82525d562905f186615",
+            "web": "1:514161904272:web:9555cc4600651895186615"
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "rules": "lib/service/Databse.dart"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
